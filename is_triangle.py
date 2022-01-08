@@ -6,7 +6,7 @@ Dec 2021
 
 """
 
-""" Spørgsmål 2 """
+""" Spørgsmål 2.1 """
 # 2.1 - is_triangle:
 # defining if a triangle is feasable by comparing its sides. if any of 3 lenghts is bigger than sum of others combined = not feasable
 
