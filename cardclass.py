@@ -34,9 +34,7 @@ class Card:
         return self.suit_names[self.suit]
 
     def value(self):
-        if self.rank == 1:
-            return 1
-        elif self.rank in range(2,9):
+        if self.rank in range(1,9):
             return self.rank
         else:
             return 10
@@ -52,5 +50,22 @@ def create_card(n):
         y = random.choice(choices)
         card = Card(x,y)
         print(card)
+        print("-----------------")
+
+def test_card():
+    x = random.randint(1,13)
+    choices = ("d","c","h","s")
+    y = random.choice(choices)
+    card = Card(x,y)
+
+    print(f"Card Rank: {card.get_rank()}")
+    print("-----------------")
+    print(f"Card Suit: {card.get_suit()}")
+    print("-----------------")
+    print(f"Card Blackjack value: {card.value()}")
+    print("-----------------")
+    print(card)
+    print("-----------------")
 
 create_card(4)
+test_card()
