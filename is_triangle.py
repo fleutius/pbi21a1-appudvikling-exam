@@ -46,4 +46,6 @@ def is_triangle_input():
     
     is_triangle(t1,t2,t3)
 
+#is_triangle(3,3,5)
+
 is_triangle_input()
